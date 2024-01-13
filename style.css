@@ -1,0 +1,172 @@
+*{
+    padding:0;
+    margin:0;
+}
+.Main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(36, 100%, 99%);
+    font-family:"Inter";
+}
+.grid-container1{
+    width: 65vw;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "w h po"
+    "p p n"
+    "b r n"
+    "b0 b1 b2";
+}
+.W{
+    grid-area:w;
+    font-weight: 800;
+    font-family:"Inter";
+}
+.home{
+    grid-area:h;
+    color:hsl(236, 13%, 42%);
+    font-size:15px;
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-right: 1px;
+    font-weight: 400;
+    font-family:"Inter";
+}
+.popular{
+    grid-area:po;
+    color:hsl(236, 13%, 42%);
+    font-size:15px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-family:"Inter";
+    
+}
+.picture{
+    grid-area:p;
+
+
+}
+.picture >img{
+    width:42vw;
+    height:30vh;
+}
+.new{
+    grid-area:n;
+    background-color: hsl(240, 100%, 5%);
+    padding-top: 30px  ;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50vh;
+    width: 18vw;
+}
+.new >h2{
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+    font-family: "Inter";
+}
+.hydrogen{ 
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+.hydrogen >h4{
+    color:hsl(36, 100%, 99%);
+    padding-top: 15px;
+    font-weight: 700;
+    font-family: "Inter";
+}
+.hydrogen >p{
+    color:hsl(233, 8%, 79%);
+    padding-top: 8px;
+    padding-bottom: 25px;
+    font-weight: 400;
+    font-size:15px;
+    font-family: "Inter";
+}
+.bright{
+    /* width:20vw; */
+    grid-area:b;
+    font-weight:800;
+    padding-right: 55px;
+    padding-bottom: 25px;
+    font-size:21px;
+    
+    
+}
+.read{
+    grid-area:r;
+    padding-right:30px;
+}
+.read > p{
+    font-size: 15px;
+    font-weight:400;
+    color: hsl(236, 13%, 42%);
+    font-family: "Inter";
+}
+.read > button{
+    width: 10vw;
+    height: 5vh;
+    margin-top: 32px;
+    background-color: hsl(5, 85%, 63%);
+    border: solid 2px hsl(5, 85%, 63%);
+    border-radius: 2px;
+    color:hsl(36, 100%, 99%);
+    font-weight: 400;
+    padding: 1px 2px;
+    font-family: "Inter";
+    font-size: 15px;
+}
+.boards{
+    grid-area:b0;
+    display:flex;
+    gap: 15px;
+    height: 20vh;
+    font-family: "Inter";
+    padding-right:10px;
+}
+.one > p{
+    font-size: 15px;
+    font-weight:400;
+    color: hsl(236, 13%, 42%);
+    font-family: "Inter";  
+    padding-top:23px; 
+    
+}
+.one>h4{
+    font-family: "Inter"; 
+    padding-top:5px; 
+    font-size: 15px;    
+}
+.boards > img{
+    width: 15vw;
+    height: 18vh;
+}
+.boards1{
+    grid-area:b1;
+    display:flex;
+    gap : 15px;
+    height: 20vh;
+    font-family: "Inter";
+    padding-right:10px;
+}
+.boards2{
+    grid-area:b2;
+    display:flex;
+    gap: 15px;
+    height: 20vh;
+    font-family: "Inter";
+    
+}
+.boards1 > img{
+    width: 15vw;
+    height: 18vh;
+}
+.boards2 > img{
+    width: 15vw;
+    height: 18vh;
+}
